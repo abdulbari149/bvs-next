@@ -1,0 +1,12 @@
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+
+a:hover {
+  color: #444 !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background-color: #c5b8a7;
+  border-radius: 0;
+}
