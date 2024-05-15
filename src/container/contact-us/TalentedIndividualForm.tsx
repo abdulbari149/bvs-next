@@ -5,7 +5,6 @@ const TalentedIndividualForm = () => {
 		<div
 			className="responsive-two-column-grid"
 			style={{ marginTop: "2%" }}
-			// style="margin-top: 2%"
 		>
 			<div>
 				<div className="contact-right" style={{ margin: "auto" }}>
@@ -24,7 +23,6 @@ const TalentedIndividualForm = () => {
 							type="text"
 							name="_honey"
 							style={{ display: "none" }}
-							// style="display:none"
 						/>
 						<input
 							type="hidden"
@@ -37,7 +35,6 @@ const TalentedIndividualForm = () => {
 							placeholder="Name"
 							name="Name"
 							style={{ width: "100%" }}
-							// style="width: 100%"
 							required
 						/>
 						<div style={{ display: "flex", justifyContent: "space-between" }}>

@@ -41,7 +41,6 @@ export default function RootLayout({
 				<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
 			</head>
 			<body>{children}</body>
-			<Script src="/js/simpleParallax.js" defer />
 		</html>
 	);
 }

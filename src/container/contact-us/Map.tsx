@@ -1,12 +1,14 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import L from "leaflet";
 
 const LeafletMap = () => {
 	const mapElementRef = useRef<HTMLDivElement | null>(null);
 
-	useEffect(() => {
+	const loadMap = async () => {
 		if (!mapElementRef.current) return;
+
+		const L = await import("leaflet");
+
 		const map = L.map(mapElementRef.current, {
 			scrollWheelZoom: false,
 			zoomControl: false,
@@ -43,7 +45,19 @@ const LeafletMap = () => {
 		const marker = L.marker([40.75225, -73.9883], { icon: BVSicon }).addTo(map);
 		marker.bindPopup("130 West 37 Street, New York, NY").openPopup();
 
+		return map;
+	};
+
+	useEffect(() => {
+		let map: any;
+		if (typeof window === "undefined") return;
+
+		loadMap().then((res) => {
+			map = res;
+		});
+
 		return () => {
+			if (typeof window === "undefined" || !map) return;
 			map.remove();
 		};
 	}, []);

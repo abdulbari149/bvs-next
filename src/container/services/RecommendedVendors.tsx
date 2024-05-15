@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VendorName from "./VendorName";
 
 const vendors = [
 	{
@@ -8,6 +9,7 @@ const vendors = [
 		description: "Inspections and Owner's Rep",
 		phone: "212-547-9000",
 		email: "admin@azark.com",
+		tagId: "azark-ser",
 	},
 	{
 		id: 2,
@@ -16,6 +18,7 @@ const vendors = [
 		description: "Architecture and Drafting",
 		phone: "212-547-9000",
 		email: "admin@aapc.nyc",
+		tagId: "aapc-ser",
 	},
 	{
 		id: 3,
@@ -24,6 +27,7 @@ const vendors = [
 		description: "Design and Construction",
 		phone: "212-292-8226",
 		email: "admin@arkco.nyc",
+		tagId: "arkco-ser",
 	},
 	{
 		id: 4,
@@ -32,6 +36,7 @@ const vendors = [
 		description: "Property Database and Alerts",
 		phone: "212-401-6011",
 		email: "admin@violerts.com",
+		tagId: "violerts-ser",
 	},
 	{
 		id: 5,
@@ -40,6 +45,7 @@ const vendors = [
 		description: "Digital and Printed Media",
 		phone: "212-294-5974",
 		email: "admin@vps.nyc",
+		tagId: "vps-ser",
 	},
 ];
 
@@ -63,14 +69,10 @@ const RecommendedVendors = () => {
 			{vendors.map((vendor, index) => {
 				return (
 					<div key={vendor.id} className="ser-container">
-						<Link href={vendor.link} target="_blank">
-							<div
-								id="azark-ser"
-								className={index % 2 == 0 ? "ser-left1" : "ser-right2"}
-							>
-								<h1>{vendor.name}</h1>
-							</div>
-						</Link>
+						<VendorName
+							className={index % 2 == 0 ? "ser-left1" : "ser-right2"}
+							vendor={vendor}
+						/>
 						<div className={index % 2 == 0 ? "ser-right1" : "ser-left2"}>
 							<h1>{vendor.description}</h1>
 							<div style={{ justifyContent: "center", alignItems: "center" }}>

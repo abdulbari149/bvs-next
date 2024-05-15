@@ -2,16 +2,12 @@ import ParallaxImage from "@/components/parallax-image";
 
 const ReachoutForm = () => {
 	return (
-		<div
-			className="responsive-two-column-grid"
-			style={{ marginTop: "5%" }}
-			// style="margin-top: 5%"
-		>
+		<div className="responsive-two-column-grid" style={{ marginTop: "5%" }}>
 			<div className="contact-left">
 				<div className="contact-img">
 					<ParallaxImage
 						loading="lazy"
-						src="img/contact1.png"
+						src="/img/contact1.png"
 						style={{ width: "100%" }}
 						alt="image"
 					/>
@@ -32,7 +28,6 @@ const ReachoutForm = () => {
 							type="text"
 							placeholder="Name"
 							name="Name"
-							// style="width: 100%"
 							style={{ width: "100%" }}
 							required
 						/>
@@ -56,7 +51,6 @@ const ReachoutForm = () => {
 							placeholder="Message"
 							name="Message"
 							style={{ width: "100%" }}
-							// style="width: 100%"
 							required
 						></textarea>
 						<button type="submit">Submit</button>

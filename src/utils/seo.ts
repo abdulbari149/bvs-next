@@ -21,27 +21,27 @@ export const generateSeo = (
 		icons: [
 			{
 				type: "image/x-icon",
-				url: "favicon.ico",
+				url: "/favicon.ico",
 			},
 			{
 				type: "apple-touch-icon",
 				sizes: "180x180",
-				url: "apple-touch-icon.png",
+				url: "/apple-touch-icon.png",
 			},
 			{
 				type: "image/png",
 				sizes: "32x32",
-				url: "favicon-32x32.png",
+				url: "/favicon-32x32.png",
 			},
 			{
 				type: "image/png",
 				sizes: "16x16",
-				url: "favicon-16x16.png",
+				url: "/favicon-16x16.png",
 			},
 			{
 				rel: "mask-icon",
 				color: "#AA182C",
-				url: "safari-pinned-tab.svg",
+				url: "/safari-pinned-tab.svg",
 			},
 		],
 		other: {

@@ -315,7 +315,7 @@ const DepartmentOfBuildings = () => {
 	const [activeAgencyIndex, setActiveAgencyIndex] = useState(0);
 
 	const activeAgency = agencies[activeAgencyIndex];
-	console.log(activeAgency);
+
 	return (
 		<div className="responsive-two-column-grid" style={{ marginTop: "5%" }}>
 			<div style={{ padding: "5% 0 5% 0" }}>

@@ -9,7 +9,7 @@ const Services = () => {
 			<Hero title="Services" />
 			<DepartmentOfBuildings />
 			<PageBreak />
-			<RecommendedVendors />
+      <RecommendedVendors />
 		</>
 	);
 };
