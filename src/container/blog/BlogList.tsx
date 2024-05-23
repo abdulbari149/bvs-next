@@ -29,6 +29,8 @@ const getPosts = async () => {
 	return posts;
 };
 
+
+
 const BlogList = async () => {
 	const posts = await getPosts();
 

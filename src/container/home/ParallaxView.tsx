@@ -40,7 +40,7 @@ const ParallaxView = () => {
 						<b>aggressive permit approvals</b>, ensuring a{" "}
 						<b>smooth and timely construction process to completion.</b>{" "}
 					</h5>
-					<a href="/contact">- Get in Touch</a>
+					<button style={{ color: "#fff" }}>- Get in Touch</button>
 				</div>
 			</div>
 		</div>

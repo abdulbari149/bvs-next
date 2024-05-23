@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
 import OurProcess from "./OurProcess";
-import Slider from "./Slider";
+import DepartmentsSlider from "./DepartmentsSlider";
 import PageBreak from "@/components/page-break";
 import ParallaxView from "./ParallaxView";
 import ContactUs from "./ContactUs";
@@ -13,7 +13,7 @@ const Home = () => {
 			<AboutUs />
 			<PageBreak />
 			<OurProcess />
-			<Slider />
+			<DepartmentsSlider />
 			<PageBreak />
 			<ParallaxView />
 			<PageBreak />

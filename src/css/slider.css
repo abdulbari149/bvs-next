@@ -26,20 +26,16 @@
     -ms-user-select: none;
     user-select: none;
     gap: var(--gap);
-    -webkit-mask-image: linear-gradient(
-            var(--mask-direction, to right),
+    -webkit-mask-image: linear-gradient(var(--mask-direction, to right),
             hsl(0 0% 0% / 0),
             hsl(0 0% 0% / 1) 20%,
             hsl(0 0% 0% / 1) 80%,
-            hsl(0 0% 0% / 0)
-    );
-    mask-image: linear-gradient(
-            var(--mask-direction, to right),
+            hsl(0 0% 0% / 0));
+    mask-image: linear-gradient(var(--mask-direction, to right),
             hsl(0 0% 0% / 0),
             hsl(0 0% 0% / 1) 20%,
             hsl(0 0% 0% / 1) 80%,
-            hsl(0 0% 0% / 0)
-    );
+            hsl(0 0% 0% / 0));
 }
 
 .marquee__group {
@@ -86,6 +82,7 @@
     from {
         transform: translateX(var(--scroll-start));
     }
+
     to {
         transform: translateX(var(--scroll-end));
     }
@@ -95,6 +92,7 @@
     from {
         transform: translateX(var(--scroll-start));
     }
+
     to {
         transform: translateX(var(--scroll-end));
     }
@@ -104,6 +102,7 @@
     from {
         transform: translateY(var(--scroll-start));
     }
+
     to {
         transform: translateY(var(--scroll-end));
     }
@@ -113,6 +112,7 @@
     from {
         transform: translateY(var(--scroll-start));
     }
+
     to {
         transform: translateY(var(--scroll-end));
     }
@@ -137,14 +137,14 @@
     transition: all .2s ease-in;
 }
 
-.marquee img{
+.marquee img {
     margin: 1%;
     height: 30vh;
     width: 50vh;
     object-fit: cover;
 }
 
-.marquee h2 {
+.marquee a {
     display: grid;
     place-items: center;
     width: var(--size);
@@ -168,10 +168,11 @@
     cursor: pointer;
 }
 
-.marquee h2:hover {
+.marquee a:hover {
     color: #0e0e0f;
     background: #ad172c;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .marquee--vertical svg {
@@ -236,9 +237,11 @@
     0% {
         top: 70%;
     }
+
     50% {
         top: 40%;
     }
+
     100% {
         top: 70%;
     }
@@ -250,7 +253,7 @@
     margin: 5rem;
 }
 
-.stat .hover-text{
+.stat .hover-text {
     font-size: 7vmax;
 }
 
@@ -261,7 +264,7 @@
     margin: 5% 0;
 }
 
-.stats-left h1{
+.stats-left h1 {
     font-size: 2.5vmax;
 }
 
@@ -274,7 +277,7 @@
     color: white;
 }
 
-.stats-right a{
+.stats-right a {
     font-size: 1.75rem;
     color: white;
     -moz-transition: all .2s ease-in;
@@ -282,7 +285,8 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.stats-right a:hover{
+
+.stats-right a:hover {
     color: #ad172c;
     text-decoration: none;
 }
@@ -406,7 +410,7 @@
 }
 
 /* columns */
-.responsive-three-column-grid > * {
+.responsive-three-column-grid>* {
     padding: 8rem 0;
     text-align: center;
     margin: 15% 5%;
@@ -421,7 +425,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .responsive-three-column-grid > * {
+    .responsive-three-column-grid>* {
         padding: 8rem 1rem;
         text-align: center;
         margin: 10% 20%;
@@ -441,7 +445,7 @@
         padding-top: 5%;
     }
 
-    .parallax-view h2{
+    .parallax-view h2 {
         font-size: 3vmax;
     }
 
@@ -475,7 +479,7 @@
         margin: 5%;
     }
 
-    .stats-right h5{
+    .stats-right h5 {
         font-size: 2vmax;
     }
 
@@ -487,7 +491,7 @@
 }
 
 
-.about-right img{
+.about-right img {
     height: 65vh;
 }
 
@@ -531,12 +535,12 @@
 
     }
 
-    .stat .hover-text{
+    .stat .hover-text {
         font-size: 13vmax;
         margin: 10% 10% 2.5%;
     }
 
-    .stat h2{
+    .stat h2 {
         margin-bottom: 12%;
     }
 
@@ -569,7 +573,8 @@
         width: 100%;
     }
 
-    input, textarea{
+    input,
+    textarea {
         font-size: 2.5vmax;
     }
 
@@ -582,19 +587,19 @@
         width: 80%;
     }
 
-    .about-left h4{
+    .about-left h4 {
         font-size: 2vmax;
     }
 
-    .about-left h1{
+    .about-left h1 {
         font-size: 3.5vmax;
     }
 
-    .about-left h3{
+    .about-left h3 {
         font-size: 1.8vmax;
     }
 
-    .about-right img{
+    .about-right img {
         height: 35vh;
     }
 
@@ -613,7 +618,7 @@
         font-size: medium;
     }
 
-    .marquee__group{
+    .marquee__group {
         padding-top: 60px;
     }
 

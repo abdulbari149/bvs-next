@@ -10,7 +10,7 @@ const OurProcess = () => {
 								<div className="pane-warp">
 									<div className="steps-pane">
 										<h2>
-											Investigate & <br />
+											Investigation & <br />
 											Due-Diligence
 										</h2>
 										<p>
@@ -119,7 +119,7 @@ const OurProcess = () => {
 							<div className="setup">
 								<div className="pane-warp ">
 									<div className="steps-pane">
-										<h2>Propose & Clarify</h2>
+										<h2>Propose & Clarification</h2>
 										<p>
 											Our trusted professionals will provide our clientele with
 											innovative design solutions from our comprehensive

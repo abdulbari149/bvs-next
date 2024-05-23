@@ -554,3 +554,23 @@ button:hover {
 #filled-logo:hover {
     opacity: 1;
 }
+
+#the-text img {
+    width: 100%;
+    padding: 5%;
+}
+
+#the-text p,
+#the-text h1,
+#the-text h2,
+#the-text h3,
+#the-text h4,
+#the-text h5,
+#the-text h6,
+#the-text span,
+#the-text div,
+#the-text ul,
+#the-text li,
+#the-text ol {
+    text-align: left !important;
+}

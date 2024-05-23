@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 export const generateSeo = (
 	title: string,
+	options: { keywords?: string[] } = {}
 ) => {
 	return {
 		title,
@@ -14,6 +15,7 @@ export const generateSeo = (
 			"Design",
 			"Solutions",
 			"Resolution",
+			...(options?.keywords ?? [])
 		],
 		authors: { name: "Azark Inc" },
 		alternates: { canonical: "https://bvs.nyc/" },

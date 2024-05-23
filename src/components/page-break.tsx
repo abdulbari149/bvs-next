@@ -3,7 +3,7 @@ const PageBreak = () => {
 		<div style={{ display: "flex", justifyContent: "center" }}>
 			<img
 				loading="lazy"
-				src="img/pagebreak.png"
+				src="/img/pagebreak.png"
 				className="page-break"
 				alt="image"
 			/>
